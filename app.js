@@ -26,12 +26,12 @@ const styleCursorIn=(e)=>{
   cursorBig.style.height="40px";
   margin=14;
 };
-const styleCursorOut = (e) => {
-  cursorSmall.style.display = "block";
-  cursorBig.style.transitionDuration = "100ms";
-  cursorBig.style.width = "20px";
-  cursorBig.style.height = "20px";
-  margin = 9;
+const styleCursorOut=(e)=>{
+  cursorSmall.style.display="block";
+  cursorBig.style.transitionDuration="100ms";
+  cursorBig.style.width="20px";
+  cursorBig.style.height="20px";
+  margin=9;
 };
 document.addEventListener("scroll", (event) => {
   if (lastScrolledLeft != window.scrollX) {
