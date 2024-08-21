@@ -19,12 +19,12 @@ function captureMousePosition(event) {
   yMousePos=event.pageY;
   positionCursor();
 }
-const styleCursorIn = (e) => {
-  cursorSmall.style.display = "none";
-  cursorBig.style.transitionDuration = "100ms";
-  cursorBig.style.width = "40px";
-  cursorBig.style.height = "40px";
-  margin = 14;
+const styleCursorIn=(e)=>{
+  cursorSmall.style.display="none";
+  cursorBig.style.transitionDuration="100ms";
+  cursorBig.style.width="40px";
+  cursorBig.style.height="40px";
+  margin=14;
 };
 const styleCursorOut = (e) => {
   cursorSmall.style.display = "block";
