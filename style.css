@@ -6,7 +6,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color: white;
+    color: rgb(255, 255, 255);
   }
   nav{
     width: 100%;
@@ -36,14 +36,14 @@ body{
   }
   nav ul.nav-bar li a{
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
   }
   .cursor-container{
     z-index: 2;
     pointer-events: none;
   }
   .small{
-    background: #fff;
+    background: #ffffff;
     height: 6px;
     width: 6px;
   }
@@ -54,7 +54,7 @@ body{
     position: absolute;
   }
   .big{
-    border: 2px solid #fff;
+    border: 2px solid #ffffff;
     height: 20px;
     width: 20px;
   }
