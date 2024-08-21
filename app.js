@@ -8,11 +8,11 @@ var lastScrolledLeft=0;
 var lastScrolledTop=0;
 const positionCursor=()=>{
   cursorSmall.style.transitionDuration="10ms";
-  cursorSmall.style.transform=`translate3d(${xMousePos}px, ${yMousePos}px, 0)`;
+  cursorSmall.style.transform=`translate3d(${xMousePos}px,${yMousePos}px,0)`;
   cursorBig.style.transitionDuration="200ms";
-  cursorBig.style.transform=`translate3d(${xMousePos - margin}px, ${
+  cursorBig.style.transform=`translate3d(${xMousePos - margin}px,${
     yMousePos-margin
-  }px, 0)`;
+  }px,0)`;
 };
 function captureMousePosition(event){
   xMousePos=event.pageX;
