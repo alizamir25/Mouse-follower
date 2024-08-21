@@ -46,12 +46,12 @@ document.addEventListener("scroll",(event)=>{
   }
   positionCursor();
 });
-cursorBig.removeEventListener("mousedown", () => {}, true);
-cursorSmall.removeEventListener("mousedown", () => {}, true);
+cursorBig.removeEventListener("mousedown",()=>{},true);
+cursorSmall.removeEventListener("mousedown",()=>{},true);
 document.addEventListener("mousemove", captureMousePosition);
-links.forEach((link) => {
+links.forEach((link)=>{
   link.addEventListener("mouseover", styleCursorIn);
 });
-links.forEach((link) => {
+links.forEach((link)=>{
   link.addEventListener("mouseleave", styleCursorOut);
 });
