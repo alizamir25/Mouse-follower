@@ -33,11 +33,11 @@ const styleCursorOut=(e)=>{
   cursorBig.style.height="20px";
   margin=9;
 };
-document.addEventListener("scroll", (event) => {
-  if (lastScrolledLeft != window.scrollX) {
-    xMousePos -= lastScrolledLeft;
-    lastScrolledLeft = window.scrollX;
-    xMousePos += lastScrolledLeft;
+document.addEventListener("scroll",(event)=>{
+  if (lastScrolledLeft!=window.scrollX){
+    xMousePos-=lastScrolledLeft;
+    lastScrolledLeft=window.scrollX;
+    xMousePos+=lastScrolledLeft;
   }
   if (lastScrolledTop != window.scrollY) {
     yMousePos -= lastScrolledTop;
