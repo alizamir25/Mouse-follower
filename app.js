@@ -14,7 +14,7 @@ const positionCursor=()=>{
     yMousePos-margin
   }px, 0)`;
 };
-function captureMousePosition(event) {
+function captureMousePosition(event){
   xMousePos=event.pageX;
   yMousePos=event.pageY;
   positionCursor();
@@ -34,12 +34,12 @@ const styleCursorOut=(e)=>{
   margin=9;
 };
 document.addEventListener("scroll",(event)=>{
-  if (lastScrolledLeft!=window.scrollX){
+  if(lastScrolledLeft!=window.scrollX){
     xMousePos-=lastScrolledLeft;
     lastScrolledLeft=window.scrollX;
     xMousePos+=lastScrolledLeft;
   }
-  if (lastScrolledTop!=window.scrollY) {
+  if(lastScrolledTop!=window.scrollY){
     yMousePos-=lastScrolledTop;
     lastScrolledTop=window.scrollY;
     yMousePos+=lastScrolledTop;
