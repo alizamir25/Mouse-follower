@@ -1,4 +1,4 @@
-body {
+body{
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #74b7b3, #575a5b);
     margin: 0;
@@ -8,7 +8,7 @@ body {
     min-height: 100vh;
     color: white;
   }
-  nav {
+  nav{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@ body {
     left: 0;
     z-index: 1;
   }
-  nav ul.nav-bar {
+  nav ul.nav-bar{
     min-height: 4rem;
     display: flex;
     flex-direction: row;
@@ -30,30 +30,30 @@ body {
     padding: 0 1.5rem;
     position: sticky;
   }
-  nav ul.nav-bar li {
+  nav ul.nav-bar li{
     list-style: none;
     letter-spacing: 0;
   }
-  nav ul.nav-bar li a {
+  nav ul.nav-bar li a{
     text-decoration: none;
     color: #fff;
   }
-  .cursor-container {
+  .cursor-container{
     z-index: 2;
     pointer-events: none;
   }
-  .small {
+  .small{
     background: #fff;
     height: 6px;
     width: 6px;
   }
-  .cursor {
+  .cursor{
     border-radius: 50%;
     left: 0;
     top: 0;
     position: absolute;
   }
-  .big {
+  .big{
     border: 2px solid #fff;
     height: 20px;
     width: 20px;
