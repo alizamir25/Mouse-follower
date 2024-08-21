@@ -39,10 +39,10 @@ document.addEventListener("scroll",(event)=>{
     lastScrolledLeft=window.scrollX;
     xMousePos+=lastScrolledLeft;
   }
-  if (lastScrolledTop != window.scrollY) {
-    yMousePos -= lastScrolledTop;
-    lastScrolledTop = window.scrollY;
-    yMousePos += lastScrolledTop;
+  if (lastScrolledTop!=window.scrollY) {
+    yMousePos-=lastScrolledTop;
+    lastScrolledTop=window.scrollY;
+    yMousePos+=lastScrolledTop;
   }
   positionCursor();
 });
