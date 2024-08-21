@@ -1,23 +1,22 @@
-const cursorSmall = document.querySelector(".small");
-const cursorBig = document.querySelector(".big");
-const links = document.querySelectorAll("a");
-var margin = 9;
-var xMousePos = 0;
-var yMousePos = 0;
-var lastScrolledLeft = 0;
-var lastScrolledTop = 0;
-const positionCursor = () => {
-  cursorSmall.style.transitionDuration = "10ms";
-  cursorSmall.style.transform = `translate3d(${xMousePos}px, ${yMousePos}px, 0)`;
-
-  cursorBig.style.transitionDuration = "200ms";
-  cursorBig.style.transform = `translate3d(${xMousePos - margin}px, ${
-    yMousePos - margin
+const cursorSmall=document.querySelector(".small");
+const cursorBig=document.querySelector(".big");
+const links=document.querySelectorAll("a");
+var margin=9;
+var xMousePos=0;
+var yMousePos=0;
+var lastScrolledLeft=0;
+var lastScrolledTop=0;
+const positionCursor=()=>{
+  cursorSmall.style.transitionDuration="10ms";
+  cursorSmall.style.transform=`translate3d(${xMousePos}px, ${yMousePos}px, 0)`;
+  cursorBig.style.transitionDuration="200ms";
+  cursorBig.style.transform=`translate3d(${xMousePos - margin}px, ${
+    yMousePos-margin
   }px, 0)`;
 };
 function captureMousePosition(event) {
-  xMousePos = event.pageX;
-  yMousePos = event.pageY;
+  xMousePos=event.pageX;
+  yMousePos=event.pageY;
   positionCursor();
 }
 const styleCursorIn = (e) => {
